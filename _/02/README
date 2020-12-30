@@ -1,0 +1,7 @@
+Examples were developed using Eclipse IDE. You can easily import the project into your Workspace by following these steps:
+1. Select File | Import…
+2. Select General | Existing Projects into Workspace and click Next.
+3. Click Browse… and select the example directory you are interested on.
+4. Make sure the project is checked in the Projects box and click Finish.
+
+Have fun!

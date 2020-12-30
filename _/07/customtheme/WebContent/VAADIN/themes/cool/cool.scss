@@ -1,0 +1,117 @@
+/* Import the chameleon theme.*/
+/* This only allows us to use the mixins defined in it and does not add any styles by itself. */
+@import "../chameleon/chameleon.scss";
+
+/* This contains all of your theme.*/
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin cool {
+  /* Include all the styles from the chameleon theme */
+  @include chameleon;
+
+  .page-header {
+    color: #fff;
+    background-color: #4455aa;
+    font: 16px Verdana, Arial;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input.v-textfield[type=text] {
+    border: 1px solid #4455aa;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background:#FFFFFF url("search.png") no-repeat 5px 2px;
+    padding-left: 22px;
+  }
+
+  .v-button {
+    color: #fff;
+    background-color: #4455aa;
+    border: 1px solid #4455aa;
+    text-shadow: 2px 2px 0px #474746;
+    height: 50px;
+    font-family: Trebuchet MS, Arial, sand-serif;
+    font-weight: bold;
+  }
+
+  .v-panel {
+    overflow: auto;
+  }
+
+  .v-panel-content {
+    background: #ffee00;
+    border: 0px #fff;
+    padding: 10px;
+    font-family: cursive, sans-serif;
+  }
+
+  .v-panel:before, .v-panel:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 18px 10px #777;
+    -moz-box-shadow: 0 18px 10px #777;
+    box-shadow: 0 18px 10px #777;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+
+  .v-panel:after {
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(43deg);
+    -o-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+    right: 10px;
+    left: auto;
+  }
+  
+  .v-menubar {
+    color: #fff;
+    background: #8495ea;
+    border: 1px solid #4455aa;
+    text-shadow: 1px 1px 0px #474746;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+  }
+  
+  .v-menubar-menuitem {
+    background: #8495ea;
+  }
+
+  .v-menubar-menuitem:hover {
+    background-color: #4455aa;
+  }
+
+  .v-menubar-menuitem-selected {
+    background-color: #6475ca;
+  }
+  
+  .v-table-header {
+    color: #fff;
+    background: #4455aa;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .v-table {
+    background: #99afff;
+  }
+  
+  .v-table-row:hover, .v-table-row-odd:hover {
+    color: #fff;
+    background: #6475ca;
+  }
+
+}
